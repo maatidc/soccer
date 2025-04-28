@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,11 +13,13 @@
       --card-background: #ffffff;
       --text-color: #333;
     }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
@@ -28,6 +29,7 @@
       margin: 0 auto;
       padding: 20px;
     }
+
     header {
       background-color: var(--primary-color);
       color: #fff;
@@ -36,6 +38,7 @@
       border-radius: 8px;
       margin-bottom: 30px;
     }
+
     .header-content {
       display: flex;
       align-items: center;
@@ -43,33 +46,42 @@
       gap: 20px;
       flex-wrap: wrap;
     }
+
     .logo {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 50%;
-      background: white;
-      padding: 0.1px; /* minimized gap */
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: white;
+  padding: 0.1px; /* Reduced from 5px to 2px */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+}
+
+
     header h1 {
-      font-size: 3rem;
+      font-size: 2.7rem;
       margin-bottom: 5px;
     }
+
     header p {
       font-size: 1.2rem;
       opacity: 0.9;
     }
+
     h2 {
       color: var(--primary-color);
       border-bottom: 2px solid var(--accent-color);
       padding-bottom: 5px;
       margin-bottom: 15px;
     }
+
     h3 {
       margin-bottom: 8px;
       color: var(--accent-color);
     }
+
     .section {
       background: var(--card-background);
       padding: 20px;
@@ -77,19 +89,23 @@
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
+
     .rules-list, .weekly {
       list-style-position: inside;
       padding-left: 15px;
       margin-top: 10px;
     }
+
     .rules-list li, .weekly li {
       margin-bottom: 8px;
     }
+
     .participants {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
       gap: 10px;
     }
+
     .participant {
       background: #eaf2f8;
       padding: 10px;
@@ -97,18 +113,21 @@
       text-align: center;
       font-weight: normal;
     }
+
     .financial-summary {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
       margin-top: 15px;
     }
+
     .financial-box {
       background: #e8f8f5;
       padding: 15px;
       border-radius: 8px;
       text-align: center;
     }
+
     .location {
       background: #fef9e7;
       padding: 15px;
@@ -116,6 +135,7 @@
       margin-bottom: 10px;
       border-radius: 8px;
     }
+
     footer {
       background: var(--primary-color);
       color: white;
@@ -125,10 +145,12 @@
       border-radius: 8px;
       font-size: 0.9rem;
     }
+
     a {
       color: var(--accent-color);
       text-decoration: none;
     }
+
     @media (max-width: 700px) {
       .financial-summary {
         grid-template-columns: 1fr;
@@ -136,10 +158,12 @@
     }
   </style>
 </head>
+
 <body>
+
 <header>
   <div class="header-content">
-    <img src="img/maatiSoccer.jpg" alt="Maati Soccer Ball" class="logo">
+    <img src="maatiSoccer.jpg" alt="Maati Soccer Ball" class="logo">
     <div>
       <h1>Maati Soccer Team</h1>
       <p>Stay active, enjoy the game, and respect one another</p>
@@ -148,31 +172,121 @@
 </header>
 
 <div class="section">
-  <h2>Practice Schedule</h2>
-  <div class="location">
-    <h3>Weekly Schedule</h3>
-    <ul class="rules-list">
-      <li><strong>Sunday:</strong> 7:00 AM</li>
-      <li><strong>Monday:</strong> 6:30 PM</li>
-      <li><strong>Wednesday:</strong> 6:30 PM</li>
-    </ul>
+  <h2>Our Philosophy</h2>
+  <p>We are all here to enjoy the game, stay active, and respect one another. It's important to remember that most of us are balancing families, careers, and other commitments — our shared priority is to stay safe, healthy, and injury-free so we can return to our daily lives without issue. That respect must extend onto the field.</p>
+</div>
+
+<div class="section">
+  <h2>Team Rules</h2>
+  <p>Please refrain from the following actions:</p>
+  <ul class="rules-list">
+    <li>Slide tackling from behind</li>
+    <li>Intentional kicking or tripping</li>
+    <li>Elbowing or aggressive arm use</li>
+    <li>Reckless tackles or dangerous plays</li>
+    <li>Verbal threats, taunting, or provoking</li>
+    <li>Charging the goalkeeper</li>
+    <li>Pulling jerseys or dragging players</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Participants Who Have Paid</h2>
+  <p>Thank you to the following 38 players who contributed:</p>
+  <div class="participants">
+    <!-- List of participant names -->
+    <div class="participant">1. Jirenya</div>
+    <div class="participant">2. Fayisa</div>
+    <div class="participant">3. Gamme</div>
+    <div class="participant">4. Senyi</div>
+    <div class="participant">5. Melik</div>
+    <div class="participant">6. Fuad</div>
+    <div class="participant">7. Fikre</div>
+    <div class="participant">8. Abu</div>
+    <div class="participant">9. Dawit</div>
+    <div class="participant">10. Dagnu</div>
+    <div class="participant">11. Abdu</div>
+    <div class="participant">12. Moti</div>
+    <div class="participant">13. Tesfa</div>
+    <div class="participant">14. Ebisa</div>
+    <div class="participant">15. Tesfaye Gari</div>
+    <div class="participant">16. Amanuel</div>
+    <div class="participant">17. Muluneh</div>
+    <div class="participant">18. Mohammad</div>
+    <div class="participant">19. Jirenya - Extra (1st)</div>
+    <div class="participant">20. Jirenya - Extra (2nd)</div>
+    <div class="participant">21. Melik & Gamme - Extra</div>
+    <div class="participant">22. Garuma</div>
+    <div class="participant">23. Abeyya</div>
+    <div class="participant">24. Yadesa Roro</div>
+    <div class="participant">25. Ibrahim</div>
+    <div class="participant">26. Henok</div>
+    <div class="participant">27. Tesfaye Wako</div>
+    <div class="participant">28. Safi</div>
+    <div class="participant">29. Ketema</div>
+    <div class="participant">30. Diriba</div>
+    <div class="participant">31. Dejene</div>
+    <div class="participant">32. Michu</div>
+    <div class="participant">33. Mohammed Chilalo</div>
+    <div class="participant">34. Efa</div>
+    <div class="participant">35. Shuayib</div>
+    <div class="participant">36. Biniam</div>
+    <div class="participant">37. Gabriel</div>
+    <div class="participant">38. Girma</div>
   </div>
 </div>
 
 <div class="section">
-  <h2>Practice Locations</h2>
-  <div class="location">
-    <h3>Layhill Park</h3>
-    <p>14901 Layhill Rd, Cloverly, MD 20906</p>
-  </div>
-  <div class="location">
-    <h3>Northwest Branch Park</h3>
-    <p>1450 Norbeck Rd, Aspen Hill, MD 20906</p>
+  <h2>Financial Summary</h2>
+  <div class="financial-summary">
+    <div class="financial-box">
+      <h3>Income</h3>
+      <p>Membership Fee: <strong>$35</strong></p>
+      <p>Total Collected: 38 × $35 = <strong>$1,330</strong></p>
+    </div>
+    <div class="financial-box">
+      <h3>Expenses</h3>
+      <p>Park Rental: $990</p>
+      <p>Coach Payment: $70</p>
+      <p>Soccer Ball: $58.75</p>
+      <p><strong>Total Expenses: $1,118.75</strong></p>
+      <p><strong>Remaining Balance: $211.25</strong></p>
+    </div>
   </div>
 </div>
+
+<div class="section">
+    <h2>Practice Schedule</h2>
+  
+    <div class="location">
+      <h3>Weekly Schedule</h3>
+      <ul class="rules-list">
+        <li><strong>Sunday:</strong> 7:00 AM</li>
+        <li><strong>Monday:</strong> 6:30 PM</li>
+        <li><strong>Wednesday:</strong> 6:30 PM</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2>Practice Locations</h2>
+  
+    <div class="location">
+      <h3>Layhill Park</h3>
+      <p>14901 Layhill Rd, Cloverly, MD 20906</p>
+    </div>
+  
+    <div class="location">
+      <h3>Northwest Branch Park</h3>
+      <p>1450 Norbeck Rd, Aspen Hill, MD 20906</p>
+    </div>
+  </div>
+  
+  
 
 <footer>
   <p>&copy; 2025 Maati Soccer Team | Built with ❤️ for the beautiful game</p>
 </footer>
+
 </body>
 </html>
