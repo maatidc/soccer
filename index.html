@@ -48,13 +48,12 @@
     }
 
     .logo {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
+  width: 150px;   /* Wider for rectangular image */
+  height: auto;   /* Keep natural height */
+  object-fit: contain; /* Show whole logo inside box */
   background: white;
-  padding: 0.1px; /* Reduced from 5px to 2px */
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 10px; /* Slight rounded corners (optional, clean look) */
 }
 
 }
@@ -163,7 +162,7 @@
 
 <header>
   <div class="header-content">
-    <img src="maatiSoccer.jpg" alt="Maati Soccer Ball" class="logo">
+    <img src="maatiSoccerTeam.jpg" alt="Maati Soccer Ball" class="logo">
     <div>
       <h1>Maati Soccer Team</h1>
       <p>Stay active, enjoy the game, and respect one another</p>
